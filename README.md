@@ -97,7 +97,7 @@ conda env create -f env.yml
 
 Below is a schematic representation of our pipeline:
 
-![System Flowchart](./image/flowchart.png)
+![System Flowchart](./image/system_flowchart.png)
 
 ### 2.8 Dataset Description
 
