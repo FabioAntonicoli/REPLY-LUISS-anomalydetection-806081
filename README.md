@@ -97,7 +97,7 @@ conda env create -f env.yml
 
 Below is a schematic representation of our pipeline:
 
-![System Flowchart](./image/system_flowchart.png)
+![10-Period Rolling Mean](./Image/grafico.png)
 
 ### 2.8 Dataset Description
 
