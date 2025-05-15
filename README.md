@@ -191,7 +191,7 @@ To prepare the data for use in deep learning models:
 4. **StandardScaler**: All variables were normalized (mean = 0, variance = 1) to improve neural network convergence.  
 
 **Train/test split**: Split in temporal order (80% training, 20% test) to respect the sequential structure of the data.
-
+![10-Period Rolling Mean](./Image/grafico.png)
 ---
 
 ## 5. Forecasting Models
