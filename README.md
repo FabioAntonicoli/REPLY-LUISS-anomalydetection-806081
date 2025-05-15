@@ -1,3 +1,5 @@
+
+
 # Advanced Time Series Forecasting and Anomaly Detection in Transactional Data
 
 **Authors:**  
@@ -83,23 +85,14 @@ We explored both forecast-based and unsupervised anomaly detection techniques:
 - **One-Class SVM**: kernel-based anomaly detection
 - **LSTM Autoencoder**: reconstruction error analysis
 
-### 2.6 Environment Setup
 
-Development was done in Python 3.12.2.  
-Main libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `tensorflow`, `ydata-synthetic`.
-
-To replicate our environment:
-```bash
-conda env create -f env.yml
-```
-
-### 2.7 Pipeline Overview
+### 2.6 Pipeline Overview
 
 Below is a schematic representation of our pipeline:
 
 ![10-Period Rolling Mean](./Image/grafico.png)
 
-### 2.8 Dataset Description
+### 2.7 Dataset Description
 
 The dataset under examination includes transactional data collected in time sequence with the following variables:
 
@@ -115,6 +108,42 @@ All variables are numerical. The goal is twofold:
 
 - **Forecasting future transaction volumes.**  
 - **Identifying anomalous deviations (anomaly detection)** relative to the patterns considered “normal.”
+
+### 2.8 Environment Setup
+
+Development was done in Python 3.12.2.  
+Main libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `tensorflow`, `ydata-synthetic`.
+
+To replicate our environment:
+```bash
+conda env create -f env.yml
+```
+Ecco un codice Markdown tecnico e riassuntivo per la configurazione di un ambiente Conda su Windows, ideale da includere in un README o documentazione tecnica:
+
+###  Conda Environment Setup (Windows)
+
+1. Create a New Environment
+```bash
+conda create -n tf_env python=3.10
+conda activate tf_env
+
+```
+2. Install Core Packages
+```
+pip install tensorflow
+pip install pandas
+pip install scikit-learn
+pip install matplotlib
+pip install seaborn
+pip install jupyter
+pip install openpyxl
+```
+3. Launch Jupyter Notebook
+```
+jupyter notebook
+```
+
+
 
 ---
 
