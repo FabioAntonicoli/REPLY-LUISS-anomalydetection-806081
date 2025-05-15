@@ -512,3 +512,5 @@ Using rolling thresholds (mean + \(k \times \text{std}\)) on moving windows make
 ---
 
 Even though the pipeline presented is subject to data availability constraints, it outlines a complete approach to time series forecasting and anomaly detection in real transactional contexts, paving the way for further improvements and customizations according to the specific application domain.
+
+### In this project, AI was used to provide better translation
