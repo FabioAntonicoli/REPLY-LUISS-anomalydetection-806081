@@ -1,4 +1,4 @@
-
+_To correctly visualize LaTeX formulas, download the file in Visual Studio Code (VSC) and install the appropriate extension Markdown Preview Enhanced._
 
 # Advanced Time Series Forecasting and Anomaly Detection in Transactional Data
 
