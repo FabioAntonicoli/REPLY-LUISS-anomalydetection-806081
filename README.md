@@ -156,7 +156,7 @@ Initially, the time series were plotted to identify short- and long-term trends 
 - Daily variability with possible outliers due to demand peaks or service slowdowns.
 - Potential intra-daily seasonal effects with peaks at specific times (., around 6:00 PM/ 7:00 PM).
 
-![Tempora Volume](./Transaction_Volume.png)
+![Tempora Volume](./Image/Transaction_Volume.png)
 
 ### 3.2 Correlation Heatmap
 
@@ -191,7 +191,7 @@ To prepare the data for use in deep learning models:
 4. **StandardScaler**: All variables were normalized (mean = 0, variance = 1) to improve neural network convergence.  
 
 **Train/test split**: Split in temporal order (80% training, 20% test) to respect the sequential structure of the data.
-![10-Period Rolling Mean](./Image/grafico.png)
+![10-Period Rolling Mean](./Image/10-Period_Rolling_Mean.png)
 ---
 
 ## 5. Forecasting Models
