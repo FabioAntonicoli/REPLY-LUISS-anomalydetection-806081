@@ -4,8 +4,8 @@ _To correctly visualize LaTeX formulas, download the file in Visual Studio Code 
 
 **Authors:**  
 - Fabio Antonicoli  
-- Francesca Romana Galeppi  
-- Matteo Piccirilli  
+ 
+
 
 ---
 
