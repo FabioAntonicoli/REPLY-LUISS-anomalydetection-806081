@@ -2,8 +2,8 @@ _To correctly visualize LaTeX formulas, download the file in Visual Studio Code 
 
 # Advanced Time Series Forecasting and Anomaly Detection in Transactional Data
 
-**Authors:**  
-- Fabio Antonicoli  
+
+- **Fabio Antonicoli**
  
 
 
