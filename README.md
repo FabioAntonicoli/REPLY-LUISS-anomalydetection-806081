@@ -257,17 +257,18 @@ $$
 \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_{\text{observed}}^i - y_{\text{predicted}}^i \right|
 $$
 
-3. **Root Mean Squared Error (RMSE)**  
-   $$
-   \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n \left( y_{\text{observed}}^i - y_{\text{predicted}}^i \right)^2}
-   $$
+3. **Root Mean Squared Error (RMSE)**
+   
+$$
+\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n \left( y_{\text{observed}}^i - y_{\text{predicted}}^i \right)^2}
+$$
 
-4. **Mean Absolute Percentage Error (MAPE)**  
+5. **Mean Absolute Percentage Error (MAPE)**  
    $$
    \text{MAPE} = \frac{100\%}{n} \sum_{i=1}^n \left| \frac{y_{\text{observed}}^i - y_{\text{predicted}}^i}{y_{\text{observed}}^i} \right|
    $$
 
-5. **Coefficient of Determination (R²)**  
+6. **Coefficient of Determination (R²)**  
    $$
    R^2 = 1 - \frac{\sum_{i=1}^n (y_{\text{observed}}^i - y_{\text{predicted}}^i)^2}{\sum_{i=1}^n (y_{\text{observed}}^i - \overline{y_{\text{observed}}})^2}
    $$
