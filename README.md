@@ -251,22 +251,24 @@ To address the limited availability of data, various synthetic data generation m
 
 The quality of the forecasts was assessed using:
 
-1. **Mean Absolute Error (MAE)**  
-   \[
+1. **Mean Absolute Error (MAE)**
+   $$
+ \sup_a:\ 
    \text{MAE} = \frac{1}{n} \sum_{i=1}^n \left| y_{\text{observed}}^i - y_{\text{predicted}}^i \right|
    \]
+$$
 
-2. **Root Mean Squared Error (RMSE)**  
+3. **Root Mean Squared Error (RMSE)**  
    \[
    \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n \left( y_{\text{observed}}^i - y_{\text{predicted}}^i \right)^2}
    \]
 
-3. **Mean Absolute Percentage Error (MAPE)**  
+4. **Mean Absolute Percentage Error (MAPE)**  
    \[
    \text{MAPE} = \frac{100\%}{n} \sum_{i=1}^n \left| \frac{y_{\text{observed}}^i - y_{\text{predicted}}^i}{y_{\text{observed}}^i} \right|
    \]
 
-4. **Coefficient of Determination (R²)**  
+5. **Coefficient of Determination (R²)**  
    \[
    R^2 = 1 - \frac{\sum_{i=1}^n (y_{\text{observed}}^i - y_{\text{predicted}}^i)^2}{\sum_{i=1}^n (y_{\text{observed}}^i - \overline{y_{\text{observed}}})^2}
    \]
