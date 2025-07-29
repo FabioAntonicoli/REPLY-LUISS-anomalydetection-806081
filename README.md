@@ -252,10 +252,9 @@ To address the limited availability of data, various synthetic data generation m
 The quality of the forecasts was assessed using:
 
 1. **Mean Absolute Error (MAE)**
-   $$
- \sup_a:\ 
-   \text{MAE} = \frac{1}{n} \sum_{i=1}^n \left| y_{\text{observed}}^i - y_{\text{predicted}}^i \right|
-   \]
+   
+$$
+\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_{\text{observed}}^i - y_{\text{predicted}}^i \right|
 $$
 
 3. **Root Mean Squared Error (RMSE)**  
