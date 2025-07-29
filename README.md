@@ -263,15 +263,17 @@ $$
 \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n \left( y_{\text{observed}}^i - y_{\text{predicted}}^i \right)^2}
 $$
 
-5. **Mean Absolute Percentage Error (MAPE)**  
-   $$
-   \text{MAPE} = \frac{100\%}{n} \sum_{i=1}^n \left| \frac{y_{\text{observed}}^i - y_{\text{predicted}}^i}{y_{\text{observed}}^i} \right|
-   $$
+5. **Mean Absolute Percentage Error (MAPE)**
 
-6. **Coefficient of Determination (R²)**  
-   $$
-   R^2 = 1 - \frac{\sum_{i=1}^n (y_{\text{observed}}^i - y_{\text{predicted}}^i)^2}{\sum_{i=1}^n (y_{\text{observed}}^i - \overline{y_{\text{observed}}})^2}
-   $$
+$$
+\text{MAPE} = \frac{100\%}{n} \sum_{i=1}^n \left| \frac{y_{\text{observed}}^i - y_{\text{predicted}}^i}{y_{\text{observed}}^i} \right|
+$$
+
+7. **Coefficient of Determination (R²)**  
+
+$$
+R^2 = 1 - \frac{\sum_{i=1}^n (y_{\text{observed}}^i - y_{\text{predicted}}^i)^2}{\sum_{i=1}^n (y_{\text{observed}}^i - \overline{y_{\text{observed}}})^2}
+$$
 
 It should be noted that comparing real and synthetic data using these metrics can be misleading if the synthetic data distribution differs significantly from the real one.
 
@@ -416,9 +418,9 @@ An Autoencoder attempts to compress (encoder) and then reconstruct (decoder) the
 1. Calculate the reconstruction error for each time step.  
 2. Define a dynamic threshold based on a moving average and moving standard deviation over a rolling window ( 10–24 points):
 
-   $$
+$$
    \text{Threshold}_{\text{locale}} = \text{rolling\_mean}(\text{error}) + k \times \text{rolling\_std}(\text{error})
-   $$
+$$
 
 3. If the reconstruction error exceeds this local threshold, the point is classified as anomalous.
 
