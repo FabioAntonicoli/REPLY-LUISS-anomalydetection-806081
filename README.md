@@ -453,7 +453,7 @@ An additional strategy for detecting anomalies in multivariate time series is to
 Formally, a value is considered an outlier if:
 
 $$
-\vert \text{value}_t - \text{rolling\_mean}_t \vert > \lambda \times \text{rolling\_std}_t
+\left| \text{value}_{t} - \text{rolling\_mean}_{t} \right| > \lambda \cdot \text{rolling\_std}_{t}
 $$
 
 where \(\lambda\) is a sensitivity parameter, typically between 2 and 3.
