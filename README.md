@@ -258,19 +258,19 @@ $$
 $$
 
 3. **Root Mean Squared Error (RMSE)**  
-   \[
+   $$
    \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n \left( y_{\text{observed}}^i - y_{\text{predicted}}^i \right)^2}
-   \]
+   $$
 
 4. **Mean Absolute Percentage Error (MAPE)**  
-   \[
+   $$
    \text{MAPE} = \frac{100\%}{n} \sum_{i=1}^n \left| \frac{y_{\text{observed}}^i - y_{\text{predicted}}^i}{y_{\text{observed}}^i} \right|
-   \]
+   $$
 
 5. **Coefficient of Determination (R²)**  
-   \[
+   $$
    R^2 = 1 - \frac{\sum_{i=1}^n (y_{\text{observed}}^i - y_{\text{predicted}}^i)^2}{\sum_{i=1}^n (y_{\text{observed}}^i - \overline{y_{\text{observed}}})^2}
-   \]
+   $$
 
 It should be noted that comparing real and synthetic data using these metrics can be misleading if the synthetic data distribution differs significantly from the real one.
 
@@ -340,15 +340,15 @@ For anomaly detection, several approaches were considered:
 
 This approach is based on comparing the LSTM’s prediction with the actual value. The error is calculated for each time step:
 
-\[
+$$
 \text{error} = y_{\text{observed}} - y_{\text{predicted}}
-\]
+$$
 
 Over the distribution of these errors, a static threshold is set:
 
-\[
+$$
 \text{Threshold} = \mu(\text{error}) + k \times \sigma(\text{error})
-\]
+$$
 
 where \( k \) is typically a small integer ( 2 or 3). If the error exceeds this threshold, the point is classified as an anomaly.
 
@@ -415,9 +415,9 @@ An Autoencoder attempts to compress (encoder) and then reconstruct (decoder) the
 1. Calculate the reconstruction error for each time step.  
 2. Define a dynamic threshold based on a moving average and moving standard deviation over a rolling window ( 10–24 points):
 
-   \[
+   $$
    \text{Threshold}_{\text{locale}} = \text{rolling\_mean}(\text{error}) + k \times \text{rolling\_std}(\text{error})
-   \]
+   $$
 
 3. If the reconstruction error exceeds this local threshold, the point is classified as anomalous.
 
@@ -433,9 +433,9 @@ Represents, for each time step, the reconstruction error computed by the Autoenc
 **Dynamic Threshold (orange line)**  
 This adaptive threshold is computed using a rolling mean and rolling standard deviation over a window of 10 points, with a multiplying factor ( \( k = 1.5 \) ):
 
-\[
+$$
 \text{Dynamic Threshold} = \text{Rolling Mean} + k \times \text{Rolling Std}
-\]
+$$
 
 Within every 10-time-step window, the mean and standard deviation of the error are evaluated. This approach enables the orange line to adapt to slow changes or trends, flagging as outliers only those errors that deviate significantly from the local norm.
 
@@ -450,9 +450,9 @@ An additional strategy for detecting anomalies in multivariate time series is to
 
 Formally, a value is considered an outlier if:
 
-\[
+$$
 \vert \text{value}_t - \text{rolling\_mean}_t \vert > \lambda \times \text{rolling\_std}_t
-\]
+$$
 
 where \(\lambda\) is a sensitivity parameter, typically between 2 and 3.
 
