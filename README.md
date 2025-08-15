@@ -418,7 +418,7 @@ An Autoencoder attempts to compress (encoder) and then reconstruct (decoder) the
 2. Define a dynamic threshold based on a moving average and moving standard deviation over a rolling window ( 10–24 points):
 
 $$
-\text{Threshold}_{\text{locale}} = \text{rolling\_mean}(\text{error}) + k \times \text{rolling\_std}(\text{error}) 
+\text{Threshold}{\text{locale}} = \text{rolling\_mean}(\text{error}) + k \times \text{rolling\_std}(\text{error}) 
 $$
 
 3. If the reconstruction error exceeds this local threshold, the point is classified as anomalous.
